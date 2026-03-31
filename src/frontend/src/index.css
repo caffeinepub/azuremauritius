@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary teal - original mauritiusattractions.com theme */
+    --teal: 0.6 0.12 185;
+    --teal-dark: 0.45 0.1 185;
+    --teal-light: 0.78 0.09 185;
+
+    /* Warm white background */
+    --sand: 0.95 0.02 40;
+
+    /* Gold for stars: #F4B400 */
+    --gold: 0.78 0.16 82;
+
+    --background: 0.98 0.005 75;
+    --foreground: 0.15 0.01 0;
+
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.01 0;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.01 0;
+
+    /* Primary = teal */
+    --primary: 0.6 0.12 185;
+    --primary-foreground: 1 0 0;
+
+    --secondary: 0.96 0.01 0;
+    --secondary-foreground: 0.15 0.01 0;
+
+    --muted: 0.96 0.01 0;
+    --muted-foreground: 0.5 0.01 0;
+
+    --accent: 0.96 0.01 0;
+    --accent-foreground: 0.15 0.01 0;
+
+    --destructive: 0.6 0.22 20;
+    --destructive-foreground: 1 0 0;
+
+    --border: 0.88 0.02 0;
+    --input: 0.88 0.02 0;
+    --ring: 0.6 0.12 185;
+
+    --radius: 0.5rem;
+
+    --chart-1: 0.6 0.12 185;
+    --chart-2: 0.78 0.16 82;
+    --chart-3: 0.65 0.15 160;
+    --chart-4: 0.7 0.12 280;
+    --chart-5: 0.75 0.14 45;
+
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.15 0.01 0;
+    --sidebar-primary: 0.6 0.12 185;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.96 0.01 0;
+    --sidebar-accent-foreground: 0.15 0.01 0;
+    --sidebar-border: 0.88 0.02 0;
+    --sidebar-ring: 0.6 0.12 185;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.category-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
